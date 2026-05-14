@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Prenotazione</title>
+
+    <link rel="stylesheet"
+        href="style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<button id="topBtn">
+    ↑
+</button>
+
+<header>
+
+    <div class="logo">
+        Skyline Travel
+    </div>
+
+    <nav>
+
+        <ul class="nav-links"
+            id="navLinks">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinazioni.html">Destinazioni</a></li>
+            <li><a href="offerte.html">Offerte</a></li>
+            <li><a href="prenotazione.html">Prenotazione</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="hamburger"
+        id="hamburger">
+        ☰
+    </div>
+
+</header>
+
+<section class="booking-section">
+
+    <h1>
+        Prenota il tuo viaggio
+    </h1>
+
+    <div class="booking-container">
+
+        <div class="register-box">
+
+            <h2>
+                Registrazione
+            </h2>
+
+            <br>
+
+            <h3>Nome:</h3>
+            <br>
+
+            <input 
+                type="text"
+                id="regNome"
+                placeholder="Nome *">
+
+            <br>
+
+            <h3>Email:</h3>
+            <br>
+
+            <input 
+                type="email"
+                id="regEmail"
+                placeholder="Email *">
+
+            <br>
+
+            <h3>Numero di telefono:</h3>
+            <br>
+
+            <input 
+                type="tel"
+                id="regTelefono"
+                placeholder="Numero di telefono *">
+
+            <br>
+
+            <h3>Password:</h3>
+            <br>
+
+            <input 
+                type="password"
+                id="regPassword"
+                placeholder="Password *">
+
+            <br>
+
+            <button id="registerBtn">
+                Registrati
+            </button>
+
+            <p id="registerMessage"></p>
+
+        </div>
+
+        <div class="booking-box">
+
+            <h2>
+                Prenotazione
+            </h2>
+
+            <h3>
+                Stato di partenza
+            </h3>
+
+            <select id="country">
+
+                <option value="">
+                    Seleziona stato
+                </option>
+
+                <option>Italia</option>
+                <option>Francia</option>
+                <option>Spagna</option>
+                <option>Germania</option>
+                <option>Regno Unito</option>
+                <option>Portogallo</option>
+                <option>Svizzera</option>
+                <option>Stati Uniti</option>
+                <option>Canada</option>
+                <option>Brasile</option>
+                <option>Argentina</option>
+                <option>Giappone</option>
+                <option>Cina</option>
+                <option>India</option>
+                <option>Australia</option>
+                <option>Egitto</option>
+                <option>Emirati Arabi</option>
+
+            </select>
+
+            <h3>
+                Destinazione
+            </h3>
+
+            <select id="destination">
+
+                <option value="">
+                    Seleziona destinazione
+                </option>
+
+                <option>New York</option>
+                <option>Parigi</option>
+                <option>Londra</option>
+                <option>Roma</option>
+                <option>Tokyo</option>
+                <option>Dubai</option>
+                <option>Bali</option>
+                <option>Madrid</option>
+                <option>Rio de Janeiro</option>
+                <option>Sharm El Sheikh</option>
+
+            </select>
+
+            <h3>
+                Data del viaggio
+            </h3>
+
+            <input
+                type="date"
+                id="travelDate">
+
+            <h3>
+                Ora di partenza
+            </h3>
+
+            <input
+                type="time"
+                id="travelTime">
+<h3>
+    Numero di persone
+</h3>
+
+<select id="people">
+
+    <option value="1">1 persona</option>
+    <option value="2">2 persone</option>
+    <option value="3">3 persone</option>
+    <option value="4">4 persone</option>
+    <option value="5+">5+ persone</option>
+
+</select>
+
+<h3>
+    Stile viaggio
+</h3>
+
+<select id="travelStyle">
+
+    <option>Comfort</option>
+    <option>Premium</option>
+    <option>Lusso</option>
+
+</select>
+
+<h3>
+    Durata viaggio
+</h3>
+
+<select id="days">
+
+    <option>4 giorni</option>
+    <option>7 giorni</option>
+    <option>10 giorni</option>
+    <option>14 giorni</option>
+
+</select>
+
+<h3>
+    Hotel
+</h3>
+            <select id="hotelType">
+
+                <option>Hotel ★★★</option>
+                <option>Hotel ★★★★</option>
+                <option>Hotel ★★★★★</option>
+                <option>Resort</option>
+                <option>Villaggio turistico</option>
+                <option>Ostello</option>
+                <option>Villa privata</option>
+
+            </select>
+
+            <h3>
+                Mezzo di trasporto
+            </h3>
+
+            <select id="transport">
+
+                <option>Aereo</option>
+                <option>Treno</option>
+                <option>Nave</option>
+                <option>Pullman</option>
+
+            </select>
+
+            <h3>
+                Budget viaggio
+            </h3>
+
+            <input
+                type="range"
+                min="200"
+                max="5000"
+                value="1000"
+                id="budgetSlider">
+
+            <p id="budgetValue">
+                Budget: 1000€
+            </p>
+
+            <button id="bookingBtn">
+                Prenota ora
+            </button>
+
+            <p id="bookingMessage"></p>
+
+            <div id="travelSolutions"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Skyline Travel
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
