@@ -93,7 +93,7 @@ Skyline-Travel/
 
 Come avviare il progetto
 Clona la repository:
-git clone https://github.com/TUO-USERNAME/Skyline-Travel.git
+https://github.com/danieled08/Sito15Maggio.git
 Apri la cartella del progetto
 Avvia index.html nel browser
 
