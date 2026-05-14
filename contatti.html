@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Contatti</title>
+
+    <link rel="stylesheet"
+        href="style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+    <header>
+
+        <div class="logo">
+            Skyline Travel
+        </div>
+
+        <nav>
+
+            <ul class="nav-links"
+                id="navLinks">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinazioni.html">Destinazioni</a></li>
+                <li><a href="offerte.html">Offerte</a></li>
+                <li><a href="prenotazione.html">Prenotazione</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="hamburger"
+            id="hamburger">
+            ☰
+        </div>
+
+    </header>
+
+    <section class="contact-section">
+
+        <h1>
+            Contattaci
+        </h1>
+
+        <p class="contact-text">
+
+            Hai bisogno di informazioni?
+            Vuoi organizzare un viaggio personalizzato?
+            Il nostro team è disponibile 24/7.
+
+        </p>
+
+        <div class="contact-cards">
+
+            <div class="contact-card">
+
+                <h3>
+                    📍 Sede
+                </h3>
+
+                <p>
+                    Torino, Italia
+                </p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <h3>
+                    📞 Telefono
+                </h3>
+
+                <p>
+                    +39 123 456 7890
+                </p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <h3>
+                    ✉️ Email
+                </h3>
+
+                <p>
+                    skylinetravel@istitutoeuropaunita.edu.it
+                </p>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <form id="contactForm">
+
+            <h2>
+                Nome:
+            </h2>
+
+            <input 
+                type="text"
+                id="nome"
+                placeholder="Inserisci il tuo nome">
+
+            <h2>
+                Email:
+            </h2>
+
+            <input 
+                type="email"
+                id="email"
+                placeholder="Inserisci la tua email">
+
+            <h2>
+                Numero di telefono:
+            </h2>
+
+            <input 
+                type="tel"
+                id="telefono"
+                placeholder="Inserisci il tuo numero">
+
+            <h2>
+                Messaggio:
+            </h2>
+
+            <textarea 
+                id="messaggio"
+                placeholder="Scrivi il tuo messaggio"></textarea>
+
+            <button type="submit">
+                Invia
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 Skyline Travel
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
